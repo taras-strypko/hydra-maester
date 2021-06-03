@@ -120,6 +120,8 @@ type OAuth2ClientSpec struct {
 	// Indication which authentication method shoud be used for the token endpoint
 	TokenEndpointAuthMethod TokenEndpointAuthMethod `json:"tokenEndpointAuthMethod,omitempty"`
 
+	// +kubebuilder:validation:Type=object
+	//
 	// Metadata is abritrary data
 	Metadata json.RawMessage `json:"metadata,omitempty"`
 }
